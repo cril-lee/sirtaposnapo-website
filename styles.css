@@ -1,0 +1,186 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #faf7ff;
+    color: #20204a;
+}
+
+/* NAVIGATION */
+
+nav {
+    background: #7770b5;
+    padding: 15px 8%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav h2 {
+    color: white;
+    margin: 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 25px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* SECTIONS */
+
+section {
+    padding: 50px 10%;
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.title h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.title p {
+    font-size: 18px;
+}
+
+/* HOME */
+
+.hero {
+    text-align: center;
+    padding: 70px 10%;
+    background: #eee9ff
+}
+
+.hero h1 {
+    font-size: 50px;
+    margin: 10px;
+}
+
+.hero span {
+    color: #7770b5
+}
+
+.hero p {
+    max-width: 700px;
+    margin: auto;
+    line-height: 1.6;
+}
+
+.slime {
+    font-size: 80px;
+    margin: 20px;
+}
+
+/* CARDS */
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.card {
+    padding: 25px;
+    border-radius: 20px;
+    background: white;
+    box-shadow: 0 4px 12px #ddd;
+}
+
+.card h2 {
+    margin-top: 0;
+}
+
+.card li {
+    margin: 10px 0;
+}
+
+/* CARD COLORS */
+
+.pink {
+    background: #ffe5ef;
+}
+
+.blue {
+    background: #e1f1ff;
+}
+
+.purple {
+    background: #eee7ff;
+}
+
+.green {
+    background: #e2f7ed
+}
+
+.yellow {
+    background: #fff4d9;
+}
+
+/* BUTTON */
+
+.button {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 12px 25px;
+
+    background: #7770b5;
+    color: white;
+
+    text-decoration: none;
+    border-radius: 25px;
+}
+
+.button:hover {
+    background: #5f589e;
+}
+
+/* RESOURCE LINKS */
+
+.card a {
+    color: #5f589e;
+    font-weight: bold;
+}
+
+/* FOOTER */
+
+footer {
+    background: #7770b5;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+/* MOBILE */
+
+@media (max-width: 700px) {
+
+    nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav a {
+        margin: 5px;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .hero h1 {
+        font-size: 35px;
+    }
+}
