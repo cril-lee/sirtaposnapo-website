@@ -1,9 +1,9 @@
 // Smooth scrolling for navigation links
 
 document.querySelectorAll('a[href^="#"]').forEach(function(link) {
-    
+
     link.addEventListener("click", function(event) {
-        
+
         event.preventDefault();
 
         const section = document.querySelector(
@@ -13,5 +13,7 @@ document.querySelectorAll('a[href^="#"]').forEach(function(link) {
         section.scrollIntoView({
             behavior: "smooth"
         });
+
     });
+
 });
