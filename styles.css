@@ -1,5 +1,11 @@
+/* BASIC SETTINGS */
+
 * {
     box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 body {
@@ -8,6 +14,7 @@ body {
     background: #faf7ff;
     color: #20204a;
 }
+
 
 /* NAVIGATION */
 
@@ -18,6 +25,10 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    position: sticky;
+    top: 0;
+    z-index: 10;
 }
 
 nav h2 {
@@ -28,7 +39,7 @@ nav h2 {
 nav a {
     color: white;
     text-decoration: none;
-    margin-left: 25px;
+    margin-left: 20px;
     font-weight: bold;
 }
 
@@ -36,10 +47,11 @@ nav a:hover {
     text-decoration: underline;
 }
 
+
 /* SECTIONS */
 
 section {
-    padding: 50px 10%;
+    padding: 60px 10%;
 }
 
 .title {
@@ -56,12 +68,13 @@ section {
     font-size: 18px;
 }
 
+
 /* HOME */
 
 .hero {
     text-align: center;
-    padding: 70px 10%;
-    background: #eee9ff
+    padding: 80px 10%;
+    background: #eee9ff;
 }
 
 .hero h1 {
@@ -70,7 +83,7 @@ section {
 }
 
 .hero span {
-    color: #7770b5
+    color: #7770b5;
 }
 
 .hero p {
@@ -83,6 +96,7 @@ section {
     font-size: 80px;
     margin: 20px;
 }
+
 
 /* CARDS */
 
@@ -107,6 +121,7 @@ section {
     margin: 10px 0;
 }
 
+
 /* CARD COLORS */
 
 .pink {
@@ -122,12 +137,13 @@ section {
 }
 
 .green {
-    background: #e2f7ed
+    background: #e2f7ed;
 }
 
 .yellow {
     background: #fff4d9;
 }
+
 
 /* BUTTON */
 
@@ -147,12 +163,14 @@ section {
     background: #5f589e;
 }
 
+
 /* RESOURCE LINKS */
 
 .card a {
     color: #5f589e;
     font-weight: bold;
 }
+
 
 /* FOOTER */
 
@@ -162,6 +180,7 @@ footer {
     text-align: center;
     padding: 25px;
 }
+
 
 /* MOBILE */
 
@@ -182,5 +201,9 @@ footer {
 
     .hero h1 {
         font-size: 35px;
+    }
+
+    section {
+        padding: 40px 6%;
     }
 }
